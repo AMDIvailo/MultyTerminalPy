@@ -1,4 +1,5 @@
 import commands
+import time
 def main():
 	while (1 == 1):
 		command = raw_input('Command: ')
@@ -9,6 +10,9 @@ def main():
 			exit()
 		elif(command == "version"):
 			commands.version();
+		elif(command == "timer"):
+			timertime = input('Enter time: ')
+			commands.timer(timertime)
 		else:
 			print "There is no such command!"
 
