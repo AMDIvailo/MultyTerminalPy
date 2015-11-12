@@ -1,13 +1,13 @@
 import time
-print "Commands loaded!"
-buildversion = 1.0
+buildversion = 1.1
+codename = "Math adventures."
 def help():
 	print "Help    --> Shows this message."
 	print "Version --> Shows the current version."
 	print "Exit    --> Exits."
 	print "Timer   --> Starts a timer dialogue."
 def version():
-	print "Version: ", buildversion
+	print "Version: ", buildversion, " - ", codename
 def timer(secs):
 	secspassed = 0
 	while(secspassed < secs):
@@ -46,3 +46,4 @@ def calculator():
 
 		else:
 			print "Type help to see how to use the calculator. "
+print "Commands loaded!"
