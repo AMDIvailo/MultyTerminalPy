@@ -13,6 +13,8 @@ def main():
 		elif(command == "timer"):
 			timertime = input('Enter time: ')
 			commands.timer(timertime)
+		elif(command == "calculator" or command == "calc"):
+			commands.calculator()
 		else:
 			print "There is no such command!"
 

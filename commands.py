@@ -16,3 +16,33 @@ def timer(secs):
 		print secspassed
 		if (secspassed == secs):
 			print secs, " seconds passed!"
+def calculator():
+	calcmode = True
+	print "Calculator mode enabled!"
+	print "Use +, -, *, / to do arythmetic operations. Type exitcalc to disable the calculator mode. Type help to see this message again. "
+	while(calcmode == True):
+		calccommand = raw_input("Calculator command: ")
+		if(calccommand == "exitcalc"):
+			print "Calculator mode disabled!"
+			calcmode = False
+		elif(calccommand == "help"):
+			print "Use +, -, *, / to do arythmetic operations. Type exitcalc to disable the calculator mode. Type help to see this message again. "
+		elif(calccommand == "+"):
+			value1 = input("First value: ")
+			value2 = input("Second value: ")
+			print "Result: ", value1 + value2
+		elif(calccommand == "-"):
+                        value1 = input("First value: ")
+                        value2 = input("Second value: ")
+                        print "Result: ", value1 - value2
+                elif(calccommand == "*"):
+                        value1 = input("First value: ")
+                        value2 = input("Second value: ")
+                        print "Result: ", value1 * value2
+                elif(calccommand == "/"):
+                        value1 = input("First value: ")
+                        value2 = input("Second value: ")
+                        print "Result: ", value1 / value2
+
+		else:
+			print "Type help to see how to use the calculator. "
